@@ -1,0 +1,58 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.container{
+    height: 75%;
+    width: 375px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container > *{
+    margin: 20px 10px 20px 10px;
+}
+
+img{
+    height: 325px;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+span{
+    font-family: 'Outfit', sans-serif;
+    width: 325px;
+    color:hsl(220, 15%, 55%);
+    text-align: center;
+}
+
+span.bold{
+    font-weight: 700;
+    font-size: 26px;
+    color: hsl(218, 44%, 22%);
+}
+
+.author{
+    text-align: left;
+}

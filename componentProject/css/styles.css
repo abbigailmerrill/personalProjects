@@ -20,7 +20,7 @@ html, body{
 }
 
 .container{
-    height: 75%;
+    height: 550px;
     width: 375px;
     background-color: hsl(0, 0%, 100%);
     border-radius: 15px;
@@ -28,6 +28,7 @@ html, body{
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    padding-bottom: 25px;
 }
 
 .container > *{

@@ -1,0 +1,12 @@
+{
+  "name": "carddetailsform",
+  "version": "1.0.0",
+  "description": "This is a project that I am doing based off of challenge found on frontendmentor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "author": "Abbigail Merrill abbigail.merrill@gmail.com",
+  "license": "ISC"
+}

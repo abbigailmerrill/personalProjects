@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+*{
+    font-family: 'Space Grotesk', sans-serif;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -32,9 +36,11 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+}
+
+html,body{
+    height: 100%;
 }
 
 /* A elements that don't have a class get default styles */
@@ -71,4 +77,157 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+// Start personalized styles
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    z-index: 5;
+}
+
+.left{
+    height:100%;
+    width:30%;
+    background-image:url('../images/bg-main-desktop.png');
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    overflow:visible;
+}
+
+// Begin stylings within left - Desktop
+.firstCard, .secondCard{
+    padding: 20px 0 20px 0;
+    height: 275px;
+    width: 450px;
+    z-index: 6;
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.firstCard{
+    margin-left: 200px;
+    background-image: url("../images/bg-card-front.png");
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column
+}
+
+.secondCard{
+    margin-left: 400px;
+    background-image: url("../images/bg-card-back.png");
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardLogo{
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.cardNo{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+.cardInfo{
+    margin-left: 30px;
+    margin-top: 30px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.name, .date, .cvc{
+    color: white; 
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.cvc{
+    margin-left: 300px;
+}
+
+// begin stylings for the right side Desktop
+
+.right{
+    height: 100%;
+    width: 70%;
+    background-color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form{
+    height: 280px;
+    width: 300px;
+    margin-left: 275px;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+label{
+  text-transform: uppercase;
+  color: black;
+  font-size:12px;
+}
+
+input{
+    height: 45px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1.5px solid gray;
+    background-color: white;
+    text-indent: 10px;
+}
+
+input[type="text"]::placeholder{
+    color: gray;
+}
+
+.multiBox{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.multiBox input{
+    text-transform: uppercase;
+}
+
+.inputX2{
+    width: 60px;
+}
+
+.inputX3{
+    width: 150px;
+}
+
+button{
+    color: white;
+    font-size: 18px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: hsl(278, 68%, 11%);
+    border: none;
+    cursor: pointer;
+    height: 45px;
+    margin-top: -25px;
 }

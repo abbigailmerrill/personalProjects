@@ -3,7 +3,7 @@ The location where I upload all of my personal challenges that I do, or personal
 
 ##Summary of Projects
 
-Component Project[https://abbigailmerrill.github.io/personalProjects/componentProject/index.html]
+[Component Project}(https://abbigailmerrill.github.io/personalProjects/componentProject/index.html)
 
 #Description
 

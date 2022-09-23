@@ -8,7 +8,7 @@ html, body{
     margin: 0;
 }
 
-.main{
+main{
     height: 100%;
     width: 100%;
     background-color: hsl(212, 45%, 89%);
@@ -16,10 +16,9 @@ html, body{
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-
 }
 
-.container{
+.card{
     height: 550px;
     width: 375px;
     background-color: hsl(0, 0%, 100%);
@@ -46,6 +45,7 @@ span{
     width: 325px;
     color:hsl(220, 15%, 55%);
     text-align: center;
+    margin: 15px 0 15px 0;
 }
 
 span.bold{

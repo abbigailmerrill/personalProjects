@@ -88,7 +88,7 @@ main{
     z-index: 5;
 }
 
-.left{
+.sectionOne{
     height:100%;
     width:30%;
     background-image:url('../images/bg-main-desktop.png');
@@ -98,6 +98,8 @@ main{
     flex-direction: column;
     flex-wrap: nowrap;
     overflow:visible;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 // Begin stylings within left - Desktop
@@ -163,7 +165,7 @@ main{
 
 // begin stylings for the right side Desktop
 
-.right{
+.sectionTwo{
     height: 100%;
     width: 70%;
     background-color: white;
@@ -173,13 +175,17 @@ main{
 }
 
 form{
-    height: 280px;
+    height: 325px;
     width: 300px;
     margin-left: 275px;
     display:flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
+}
+
+form>*:not(button){
+  padding-bottom: 10px;
 }
 
 label{

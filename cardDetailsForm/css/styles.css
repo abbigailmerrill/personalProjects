@@ -84,7 +84,7 @@ main {
   z-index: 5;
 }
 
-.left {
+.sectionOne {
   height: 100%;
   width: 30%;
   background-image: url("../images/bg-main-desktop.png");
@@ -94,6 +94,8 @@ main {
   flex-direction: column;
   flex-wrap: nowrap;
   overflow: visible;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .firstCard, .secondCard {
@@ -156,7 +158,7 @@ main {
   margin-left: 300px;
 }
 
-.right {
+.sectionTwo {
   height: 100%;
   width: 70%;
   background-color: white;
@@ -166,13 +168,17 @@ main {
 }
 
 form {
-  height: 280px;
+  height: 325px;
   width: 300px;
   margin-left: 275px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+}
+
+form > *:not(button) {
+  padding-bottom: 10px;
 }
 
 label {
@@ -223,6 +229,53 @@ button {
   cursor: pointer;
   height: 45px;
   margin-top: -25px;
+}
+
+@media screen and (max-width: 870px) {
+  main {
+    flex-direction: column;
+  }
+  .sectionOne {
+    height: 30%;
+    width: 100%;
+    display: block;
+  }
+  .sectionOne {
+    z-index: 8;
+  }
+  .firstCard, .secondCard {
+    height: 140px;
+    width: 200px;
+    margin-left: 0;
+  }
+  .sectionTwo {
+    height: 70%;
+    width: 100%;
+    z-index: 6;
+  }
+  form {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .firstCard {
+    margin: 100px 0 0 50px !important;
+  }
+  .secondCard {
+    margin: -200px 0 0 100px !important;
+  }
+}
+@media screen and (max-width: 870px) {
+  .firstCard {
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-left: 35%;
+  }
+  .secondCard {
+    margin: 0 auto;
+    margin-top: -200px;
+    margin-left: 40%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

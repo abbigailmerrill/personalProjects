@@ -1,8 +1,9 @@
-var name = jQuery('#name').val();
-var submit = jQuery('#submit');
+var wholeName = $('#wholeName');
+var nameValue = wholeName.value;
+var submit = $('#submit');
 
-submit.click(function(){
-    console.log(name);
+submit.click(function(e){
+    e.preventDefault();
+    console.log("cows");
+    console.log("The whole name on this card is " + nameValue);
 });
-
-// console.log is not registering the name on click

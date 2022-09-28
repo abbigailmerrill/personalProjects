@@ -15,9 +15,7 @@
     }
 
     .firstCard, .secondCard{
-        height: 140px;
-        width: 200px;
-        margin-left: 0;
+        display: none;
     }
 
     .sectionTwo{
@@ -29,16 +27,19 @@
     form{
         margin-left: 0;
     }
+
+    .tabletCardFront{
+        // width: 
+        // You left off here
+    }
 }
 
 @media screen and (max-width: 425px){
     .firstCard{
         margin: 100px 0 0 50px!important;
-        z-index: 10;
     }
 
     .secondCard{
         margin: -200px 0 0 100px!important;
-        z-index: 9;
     }
 }

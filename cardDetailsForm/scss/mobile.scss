@@ -1,5 +1,10 @@
 @media screen and (max-width: 870px){
 
+    .tabletCardFront, .tabletCardBack{
+        display: block;
+        z-index: 9;
+    }
+
     main{
         flex-direction: column;
     }
@@ -7,7 +12,8 @@
     .sectionOne{
         height: 30%;
         width: 100%;
-        display: block;
+        display: flex;
+        flex-direction: row;
     }
 
     .sectionOne{
@@ -28,18 +34,31 @@
         margin-left: 0;
     }
 
-    .tabletCardFront{
-        // width: 
-        // You left off here
+    .tabletCard{
+        width: 275px;
+        height: 180px;
+        border-radius:15px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .Front{
+        background-image: url("../images/bg-card-front.png");
+    }
+
+    .Back{
+        background-image: url("../images/bg-card-back.png");
     }
 }
 
 @media screen and (max-width: 425px){
-    .firstCard{
-        margin: 100px 0 0 50px!important;
-    }
 
-    .secondCard{
-        margin: -200px 0 0 100px!important;
-    }
+    // .Front{
+    //     margin: 100px 0 0 50px!important;
+    // }
+
+    // .Back{
+    //     margin: -200px 0 0 100px!important;
+    // }
 }

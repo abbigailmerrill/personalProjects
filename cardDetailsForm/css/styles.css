@@ -107,6 +107,7 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+  display: block;
 }
 
 .firstCard {
@@ -231,14 +232,23 @@ button {
   margin-top: -25px;
 }
 
+.tabletCardFront, .tabletCardBack {
+  display: none;
+}
+
 @media screen and (max-width: 870px) {
+  .tabletCardFront, .tabletCardBack {
+    display: block;
+    z-index: 9;
+  }
   main {
     flex-direction: column;
   }
   .sectionOne {
     height: 30%;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: row;
   }
   .sectionOne {
     z-index: 8;
@@ -254,13 +264,19 @@ button {
   form {
     margin-left: 0;
   }
-}
-@media screen and (max-width: 425px) {
-  .firstCard {
-    margin: 100px 0 0 50px !important;
+  .tabletCard {
+    width: 275px;
+    height: 180px;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
-  .secondCard {
-    margin: -200px 0 0 100px !important;
+  .Front {
+    background-image: url("../images/bg-card-front.png");
+  }
+  .Back {
+    background-image: url("../images/bg-card-back.png");
   }
 }
 @media screen and (max-width: 870px) {

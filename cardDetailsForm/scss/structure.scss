@@ -112,6 +112,7 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+    display: block;
 }
 
 .firstCard{
@@ -236,4 +237,8 @@ button{
     cursor: pointer;
     height: 45px;
     margin-top: -25px;
+}
+
+.tabletCardFront, .tabletCardBack{
+  display: none;
 }

@@ -237,6 +237,9 @@ button {
 }
 
 @media screen and (max-width: 870px) {
+  .tabletCard > * {
+    display: flex !important;
+  }
   .tabletCardFront, .tabletCardBack {
     display: block;
     z-index: 9;
@@ -274,11 +277,68 @@ button {
   }
   .Front {
     background-image: url("../images/bg-card-front.png");
+    z-index: 5;
+    margin: 225px 0 0 25px;
   }
   .Back {
     background-image: url("../images/bg-card-back.png");
+    z-index: 4;
+    margin: 30px 0 0 -175px;
+  }
+  .cardNo, .cardLogo, .cardInfo {
+    margin-left: 18px;
+  }
+  .cardNo {
+    margin-top: 60px;
+  }
+  .cardInfo {
+    margin-top: 0;
+  }
+  .name, .date {
+    font-size: 12px;
+  }
+  .date {
+    margin-right: 14px;
+  }
+  .cvc {
+    margin-top: 80px;
+    margin-left: 220px;
   }
 }
+@media screen and (max-width: 530px) {
+  .Front {
+    margin: 225px 0 0 55px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .tabletCard {
+    width: 200px;
+    height: 150px;
+  }
+  .Front {
+    margin: 225px 0 0 25px;
+  }
+  .Back {
+    margin: 25px 0 0 -125px;
+  }
+  .cardLogo {
+    height: 15%;
+  }
+  .cardNo {
+    font-size: 12px;
+  }
+  .name, .date {
+    font-size: 10px;
+  }
+  .cvc {
+    margin-top: 65px;
+    margin-left: 160px;
+  }
+}
+.tabletCard > * {
+  display: none;
+}
+
 @media screen and (max-width: 870px) {
   .firstCard {
     margin: 0 auto;

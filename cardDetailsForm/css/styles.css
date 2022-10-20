@@ -351,5 +351,28 @@ button {
     margin-left: 40%;
   }
 }
+#trashHome {
+  height: 100%;
+  width: 100%;
+  background-color: cornflowerblue;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box {
+  height: 300px;
+  width: 200px;
+  background-color: white;
+  border: 2px solid black;
+  margin: 5px 0 5px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  #trashHome {
+    flex-wrap: wrap;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */

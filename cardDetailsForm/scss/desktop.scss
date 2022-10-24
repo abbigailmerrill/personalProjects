@@ -1,0 +1,21 @@
+@media screen and (max-width:525px){
+    .top, .bottom{
+        display: none;
+    }
+
+    .left, .right{
+        display: flex !important;
+    }
+
+    .section{
+        height: 100%;
+    }
+
+    .left{
+        width: 40%;
+    }
+
+    .right{
+        width: 60%;
+    }
+}

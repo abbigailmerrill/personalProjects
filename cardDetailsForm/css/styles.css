@@ -67,7 +67,7 @@ main {
   background-position: center;
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (min-width: 745px) {
   .top, .bottom {
     display: none;
   }
@@ -82,6 +82,9 @@ main {
   }
   .right {
     width: 60%;
+  }
+  main {
+    flex-direction: row;
   }
 }
 

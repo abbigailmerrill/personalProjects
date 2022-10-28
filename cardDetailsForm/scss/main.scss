@@ -3,14 +3,12 @@
     display:flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .top{
     height: 30%;
     background-image: url("../images/bg-main-mobile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
 }
 
 .bottom{
@@ -20,6 +18,9 @@
 
 .left{
     background-image: url("../images/bg-main-desktop.png");
+}
+
+.bg-image{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

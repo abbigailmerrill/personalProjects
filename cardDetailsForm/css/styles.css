@@ -38,6 +38,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 10;
 }
 
 .section {
@@ -45,14 +46,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .top {
   height: 30%;
   background-image: url("../images/bg-main-mobile.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .bottom {
@@ -62,6 +61,9 @@ main {
 
 .left {
   background-image: url("../images/bg-main-desktop.png");
+}
+
+.bg-image {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -86,6 +88,20 @@ main {
   main {
     flex-direction: row;
   }
+}
+.card {
+  height: 145px;
+  width: 280px;
+  border-radius: 15px;
+  z-index: 11;
+}
+
+.front {
+  background-image: url("../images/bg-card-front.png");
+}
+
+.back {
+  background-image: url("../images/bg-card-back.png");
 }
 
 /*# sourceMappingURL=styles.css.map */

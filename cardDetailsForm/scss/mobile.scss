@@ -1,0 +1,14 @@
+.card{
+    height: 145px;
+    width: 280px;
+    border-radius: 15px;
+    z-index: 11;
+}
+
+.front{
+    background-image: url("../images/bg-card-front.png");
+}
+
+.back{
+    background-image: url("../images/bg-card-back.png");
+}

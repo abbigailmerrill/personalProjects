@@ -1,107 +1,98 @@
-#trashHome {
-  height: 100%;
-  width: 100%;
-  background-color: cornflowerblue;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.box {
-  height: 300px;
-  width: 200px;
-  background-color: white;
-  border: 2px solid black;
-  margin: 5px 0 5px 0;
-}
-
-@media screen and (max-width: 1200px) {
-  #trashHome {
-    flex-wrap: wrap;
-  }
-}
-* {
-  padding: 0;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   Used by Abbigail Merrill for FrontEndMentor.io Project
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
-html, body {
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html, body, main {
   height: 100%;
   width: 100%;
 }
 
 main {
-  height: 100%;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  z-index: 10;
 }
 
-.section {
+.cardDiv {
+  height: 35%;
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.top {
-  height: 30%;
   background-image: url("../images/bg-main-mobile.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.bottom {
-  height: 70%;
+.formDiv {
+  height: 65%;
+  width: 100%;
   background-color: hsl(0deg, 0%, 100%);
 }
 
-.left {
-  background-image: url("../images/bg-main-desktop.png");
-}
-
-.bg-image {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-@media screen and (min-width: 745px) {
-  .top, .bottom {
-    display: none;
-  }
-  .left, .right {
-    display: flex !important;
-  }
-  .section {
-    height: 100%;
-  }
-  .left {
-    width: 40%;
-  }
-  .right {
-    width: 60%;
-  }
+@media screen and (min-width: 475px) {
   main {
     flex-direction: row;
   }
-}
-.card {
-  height: 145px;
-  width: 280px;
-  border-radius: 15px;
-  z-index: 11;
-}
-
-.front {
-  background-image: url("../images/bg-card-front.png");
-}
-
-.back {
-  background-image: url("../images/bg-card-back.png");
+  .cardDiv {
+    height: 100%;
+    width: 40%;
+    background-image: url("../images/bg-main-desktop.png");
+  }
+  .formDiv {
+    height: 100%;
+    width: 60%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -60,6 +60,7 @@ main{
 	align-items: center;
 	justify-content:center;
 	flex-direction: column;
+	z-index:10;
 }
 
 .cardDiv{
@@ -69,12 +70,17 @@ main{
 	background-position:center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	z-index:11;
 }
 
 .formDiv{
 	height: 65%;
 	width: 100%;
 	background-color: hsl(0, 0%, 100%);
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
 }
 
 @media screen and (min-width: 475px){
@@ -84,12 +90,16 @@ main{
 
 	.cardDiv{
 		height: 100%;
-		width:40%;
+		width:35%;
 		background-image:url('../images/bg-main-desktop.png');
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
 	}
 
 	.formDiv{
 		height: 100%;
-		width: 60%;
+		width: 65%;
 	}
 }

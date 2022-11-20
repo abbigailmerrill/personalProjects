@@ -1,5 +1,6 @@
 // Establishing that content will not load until document is ready
-$(document).ready(function(){
+$(document).ready(
+    function(){
     // Graves the input that we will be grabbing value from
     $('input').keyup(function(){
         // sets value equal to the active inputs value
@@ -8,4 +9,5 @@ $(document).ready(function(){
         $('.name').text(value);
         // runs the function again every time the input keys up
     }).keyup();
+
 });

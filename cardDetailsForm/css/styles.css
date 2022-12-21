@@ -229,11 +229,18 @@ input {
   border: solid hsl(0deg, 0%, 65%);
   border-radius: 8px;
 }
+input :active {
+  border-color: hsl(278deg, 68%, 11%);
+}
 
 input::placeholder {
   font-family: "Space Grotesk";
   color: hsl(0deg, 0%, 65%);
   padding-left: 10px;
+}
+
+input::placeholder:active {
+  color: hsl(278deg, 68%, 11%);
 }
 
 input[type=number] {

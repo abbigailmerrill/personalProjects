@@ -102,4 +102,59 @@ main{
 		height: 100%;
 		width: 65%;
 	}
+
+	.formBox > *{
+		margin-left: 100px!important;
+	}
+
+	input:not(.smallInput){
+		width: 60%!important;
+	}
+
+	.formBox div .dateBox input:not(.smallInput){
+		width: 25%!important;
+	}
+
+	.formDiv div{
+		width: 100%;
+	}
+
+}
+
+@media screen and (min-width: 770px){
+	.formBox > *{
+		margin-left: 260px!important;
+	}
+
+	input:not(.smallInput) {
+		width: 45% !important;
+	}
+
+	.formBox div .dateBox input:not(.smallInput){
+		width: 20%!important;
+	}
+
+	button{
+		width: 45%!important;
+		margin-left: 200px;
+	}
+}
+
+@media screen and (min-width: 1100px){
+	.formBox div .dateBox input:not(.smallInput){
+		width: 28%!important;
+	}
+
+	button{
+		margin-left: 100px!important;
+	}
+}
+
+.formDiv .continueContent{
+	display: none;
+	height: 100%; 
+	width: 100%;
+	align-items: center; 
+	justify-content: space-around;
+	flex-direction: column;
 }

@@ -1,18 +1,21 @@
 // Fills the name section
 function nameFill(){
     $('#name').keyup(function(){
+        var alphaExp = /^[a-zA-Z]+$/;
         var value = $(this).val();
 
-        $('.name .fontAdjust').text(value);
+        if(/[0-9]/.test(value) == false){
+            $('.name .fontAdjust').text(value);
+        }
+        else{
+            alert('There cannot be numbers in your name');
+        }
     }).keyup();
-}
-
-function validateName(){
-
 }
 
 // Fills the number section
 function numberFill(){
+    
 $('#cardNum').keyup(function(){
     
     var value = $(this).val();
@@ -99,6 +102,26 @@ function cvcFill(){
     });
 }
 
+var submitContent = `
+
+` ;
+
+var continueButton = $('.continueButton');
+
+function submit(){
+    $('button').click( function(){
+        $('.formBox').css('display', 'none');
+        $('button:not(.continueButton)').css('display', 'none');
+        $('.continueContent').css('display', 'flex');
+    });
+}
+
+function refresh (){
+    $('.continueContent').click(function(){
+        window.location.reload();
+    })
+}
+
 $(document).ready(
 
 nameFill(),
@@ -106,6 +129,7 @@ numberFill(),
 monthFill(), 
 yearFill(),
 cvcFill(), 
-validateName()
+submit(), 
+refresh()
 
 )

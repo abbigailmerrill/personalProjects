@@ -40,7 +40,7 @@ input::placeholder:active{
     color: hsl(278, 68%, 11%);
 }
 
-// These styles are supposed to hide the arrows on number inputs
+// These styles hide the arrows on number inputs
 input[type= number]{
     -moz-appearance: textfield;
 }
@@ -49,4 +49,47 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.formBox div .labelBox{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    label[for="cvv"]{
+        margin-left: 15px;
+    }
+}
+
+.formBox div .dateBox{
+    height: auto;
+    display: flex;
+    margin-top: 10px;
+
+    .smallInput{
+        margin: 0 4px 0 4px;
+        width: 65px;
+    }
+
+    input:not(.smallInput){
+        margin-left: 15px;
+    }
+}
+
+button{
+    height: 50px;
+    width: 75%;
+    background-color:hsl(278, 68%, 11%);
+    color:white;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+button:active{
+    background-color:hsl(0, 0%, 0%);
+    color: grey;
 }

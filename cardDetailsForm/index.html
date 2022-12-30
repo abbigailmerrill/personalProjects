@@ -29,25 +29,39 @@
          <div class="cardNumber fontAdjust">0000 0000 0000 0000</div>
          <div class="holderInfo">
             <div class="name"><p class="fontAdjust">Jane Doe</p></div>
-            <div class="date fontAdjust"><p class="fontAdjust">00/00</p></div>
+            <div class="date fontAdjust">
+               <p class="monthText fontAdjust">00</p>
+               <p class="fontAdjust">/</p>
+               <p class="yearText fontAdjust">00</p>
+            </div>
          </div>
       </div>
      </div>
      <div class="formDiv">
       <div class="formBox">
          <label for="name">Cardholder Name</label><br>
-         <input id="name" type="text" placeholder="e.g. Jane Appleseed">
+         <input id="name" type="text" placeholder="e.g. Jane Appleseed" value ="Jane Doe" onfocus="this.value='' ">
       </div>
       <div class="formBox">
          <label for="cardNum">Card Number</label><br>
-         <input maxlength="16" id="cardNum" type="number" placeholder="e.g. 1234 5678 9101 1213">
+         <input id="cardNum" type="number" maxlength="16" placeholder="e.g. 1234 5678 9101 1213" value="0000000000000000" onfocus="this.value='' ">
       </div>
-      <!-- <div class="formBox">
-         <label for="cardNum">Card Number</label><br>
-         <input id="cardNum" type="number" placeholder="e.g. 1234 5678 9101 1213">
-      </div> -->
+
+      <div class="formBox">
+         <div>
+            <div class="labelBox">
+            <label for="expDate">Exp. Date (MM/YY)</label>
+            <label for="cvv">CVV</label>
+            </div><br>
+            <div class="dateBox">
+               <input class="smallInput" id="month" type="number" maxlength="2" value="00" onfocus="this.value='' ">
+               <input class="smallInput" id="year" type="number" maxlength="2" value="00" onfocus="this.value='' ">
+               <input label="cvc" type="number" maxlength="3" value="000" onfocus="this.value='' ">
+            </div>
+         </div>
+      </div>
       
-      <div class="button">Confirm</div>
+      <button>Confirm</button>
      </div>
   </main>
   

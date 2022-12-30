@@ -7,6 +7,10 @@ function nameFill(){
     }).keyup();
 }
 
+function validateName(){
+
+}
+
 // Fills the number section
 function numberFill(){
 $('#cardNum').keyup(function(){
@@ -47,16 +51,61 @@ function monthFill(){
         $('.monthText').text(value);
     }).keyup();
 
-    // if(value >= 12){
-    //     alert('Month value cannot exceed 12');
-    //     $('#month').value = '';
-    // }
+    $('#month').on('keypress', function (e) {
+        var maxlength = $(this).prop('maxlength');
+        if (maxlength !== -1) {  
+            // Prevent execute statement for non-set maxlength prop inputs
+            var length = $(this).val().trim().length;
+
+            if (length + 1 > maxlength) 
+            e.preventDefault();
+        }
+    });
+}
+
+function yearFill(){
+    $('#year').keyup(function(){
+        var value = $(this).val();
+        $('.yearText').text(value);
+    }).keyup();
+
+    $('#year').on('keypress', function (e) {
+        var maxlength = $(this).prop('maxlength');
+        if (maxlength !== -1) {  
+            // Prevent execute statement for non-set maxlength prop inputs
+            var length = $(this).val().trim().length;
+
+            if (length + 1 > maxlength) 
+            e.preventDefault();
+        }
+    });
+}
+
+function cvcFill(){
+    $('#cvc').keyup(function(){
+        var value = $(this).val();
+        $('.backContent.fontAdjust').text(value);
+    }).keyup();
+
+    $('#cvc').on('keypress', function (e) {
+        var maxlength = $(this).prop('maxlength');
+        if (maxlength !== -1) {  
+            // Prevent execute statement for non-set maxlength prop inputs
+            var length = $(this).val().trim().length;
+
+            if (length + 1 > maxlength) 
+            e.preventDefault();
+        }
+    });
 }
 
 $(document).ready(
 
 nameFill(),
 numberFill(),
-monthFill()
+monthFill(), 
+yearFill(),
+cvcFill(), 
+validateName()
 
 )

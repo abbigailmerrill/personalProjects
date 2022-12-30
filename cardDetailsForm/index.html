@@ -40,7 +40,7 @@
      <div class="formDiv">
       <div class="formBox">
          <label for="name">Cardholder Name</label><br>
-         <input id="name" type="text" placeholder="e.g. Jane Appleseed" value ="Jane Doe" onfocus="this.value='' ">
+         <input id="name" type="text" placeholder="e.g. Jane Appleseed" value ="Jane Doe" onfocus="this.value='' " maxlength="55">
       </div>
       <div class="formBox">
          <label for="cardNum">Card Number</label><br>
@@ -51,12 +51,12 @@
          <div>
             <div class="labelBox">
             <label for="expDate">Exp. Date (MM/YY)</label>
-            <label for="cvv">CVV</label>
+            <label for="cvv">CVC</label>
             </div><br>
             <div class="dateBox">
                <input class="smallInput" id="month" type="number" maxlength="2" value="00" onfocus="this.value='' ">
                <input class="smallInput" id="year" type="number" maxlength="2" value="00" onfocus="this.value='' ">
-               <input label="cvc" type="number" maxlength="3" value="000" onfocus="this.value='' ">
+               <input id="cvc" label="cvc" type="number" maxlength="3" value="000" onfocus="this.value='' ">
             </div>
          </div>
       </div>

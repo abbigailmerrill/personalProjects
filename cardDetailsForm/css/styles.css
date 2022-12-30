@@ -196,6 +196,11 @@ main {
 
 .name {
   margin-left: 10px;
+  max-width: 180px;
+  word-wrap: break-word;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  word-wrap: break-word;
 }
 
 .date {
